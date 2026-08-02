@@ -49,10 +49,10 @@ function checkSchedule(now, dayName, hours, minutes) {
     else if (hours === '10' && minutes === '00') {
         if (dayName === 'Senin' || dayName === 'Kamis') {
             audioToPlay = document.getElementById('audio-indonesia-raya');
-        } else if (dayName === 'Selasa' || dayName === 'Rabu') {
-            audioToPlay = document.getElementById('audio-pancasila');
-        } else if (dayName === 'Jumat') {
-            audioToPlay = document.getElementById('audio-korpri');
+        } else if (dayName === 'Selasa' || dayName === 'Jumat') {
+            audioToPlay = document.getElementById('audio-pancasila'); // Pancasila Selasa & Jumat
+        } else if (dayName === 'Rabu') {
+            audioToPlay = document.getElementById('audio-korpri'); // KORPRI Rabu
         }
     }
 
