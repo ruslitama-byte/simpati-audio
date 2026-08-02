@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIMPATI - Pemutar Audio Inspektorat Buol</title>
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,12 +32,23 @@
         </div>
     </div>
 
-    <!-- Elemen Audio Tersembunyi (Pastikan nama file MP3 di folder 'audio' sama persis) -->
-    <audio id="audio-doa" src="audio/doa.mp3"></audio>
-    <audio id="audio-indonesia-raya" src="audio/indonesia_raya.mp3"></audio>
-    <audio id="audio-pancasila" src="audio/pancasila.mp3"></audio>
-    <audio id="audio-korpri" src="audio/korpri.mp3"></audio>
+    <!-- Elemen Audio Tersembunyi -->
+    <audio id="audio-doa" src="audio/doa.mp3">
+    <audio id="audio-indonesia-raya" src="audio/indonesia_raya.mp3">
+    <audio id="audio-pancasila" src="audio/pancasila.mp3">
+    <audio id="audio-korpri" src="audio/korpri.mp3">
 
     <script src="script.js"></script>
+    
+    <!-- Pendaftaran Mode Offline (Service Worker) -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                .then(reg => console.log('Mode Offline (PWA) Aktif!', reg.scope))
+                .catch(err => console.log('PWA Gagal didaftarkan:', err));
+            });
+        }
+    </script>
 </body>
 </html>
