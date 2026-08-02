@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPATI - Pemutar Audio Inspektorat Buol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SIMPATI</h1>
+        <h2>Sistem Pemutaran Audio Terjadwal</h2>
+        
+        <div class="clock-display" id="clock">00:00:00</div>
+        <div class="date-display" id="date">Hari, Tanggal</div>
+
+        <div class="status-box">
+            <p id="status-text">Status: 🔴 Audio Belum Aktif</p>
+            <button id="activate-btn" onclick="activateAudio()">▶️ Aktifkan Sistem Audio</button>
+            <p class="note">*Wajib diklik sekali setiap pagi agar audio bisa berbunyi otomatis.</p>
+        </div>
+
+        <div class="schedule">
+            <h3>Jadwal Pemutaran:</h3>
+            <ul>
+                <li><strong>Senin - Jumat (08:00):</strong> Doa Awal Kerja</li>
+                <li><strong>Senin & Kamis (10:00):</strong> Indonesia Raya</li>
+                <li><strong>Selasa & Rabu (10:00):</strong> Pancasila</li>
+                <li><strong>Jumat (10:00):</strong> Panca Prasetya Korpri</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Elemen Audio Tersembunyi (Pastikan nama file MP3 di folder 'audio' sama persis) -->
+    <audio id="audio-doa" src="audio/doa.mp3"></audio>
+    <audio id="audio-indonesia-raya" src="audio/indonesia_raya.mp3"></audio>
+    <audio id="audio-pancasila" src="audio/pancasila.mp3"></audio>
+    <audio id="audio-korpri" src="audio/korpri.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
