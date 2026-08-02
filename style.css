@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 { margin-bottom: 5px; color: #2c3e50; }
+h2 { margin-top: 0; font-size: 16px; color: #7f8c8d; margin-bottom: 20px;}
+
+.clock-display {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2980b9;
+    margin: 10px 0;
+}
+
+.date-display { font-size: 18px; margin-bottom: 20px; }
+
+.status-box {
+    background: #e8f8f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #d1f2eb;
+}
+
+#activate-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#activate-btn:hover { background-color: #2ecc71; }
+
+.note { font-size: 12px; color: #e74c3c; margin-top: 10px; }
+
+.schedule {
+    text-align: left;
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.schedule ul { padding-left: 20px; }
+.schedule li { margin-bottom: 8px; }
