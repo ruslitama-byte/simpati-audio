@@ -43,7 +43,7 @@ function checkSchedule(now, dayName, hours, minutes) {
 
     let audioToPlay = null;
 
-    if (hours === '09' && minutes === '46' && now.getDay() >= 1 && now.getDay() <= 5) {
+    if (hours === '09' && minutes === '52' && now.getDay() >= 1 && now.getDay() <= 5) {
         audioToPlay = document.getElementById('audio-doa');
     } 
     else if (hours === '10' && minutes === '00') {
