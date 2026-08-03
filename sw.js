@@ -5,10 +5,10 @@ const urlsToCache = [
     'index.html',
     'style.css',
     'script.js',
-    'doa.mp3',
-    'indonesia_raya.mp3',
-    'pancasila.mp3',
-    'korpri.mp3'
+    'audio/doa.mp3',
+    'audio/indonesia_raya.mp3',
+    'audio/pancasila.mp3',
+    'audio/korpri.mp3'
 ];
 
 // Proses instalasi Service Worker & menyimpan file
